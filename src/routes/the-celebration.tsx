@@ -8,7 +8,6 @@ import celebration2 from "@/assets/celebration-2.jpg.asset.json";
 import celebration3 from "@/assets/celebration-3.jpg.asset.json";
 import celebration4 from "@/assets/celebration-4.jpg.asset.json";
 import celebration5 from "@/assets/celebration-5.jpg.asset.json";
-import family from "@/assets/family.jpg";
 
 export const Route = createFileRoute("/the-celebration")({
   head: () => ({
@@ -113,7 +112,7 @@ function Celebration() {
               <Link to="/order" className="rounded-sm bg-gold-gradient px-6 py-3.5 text-xs font-semibold tracking-[0.2em] text-primary-foreground">ORDER FROM THE BITE</Link>
             </div>
           </div>
-          <img src={family} alt="Family feast" loading="lazy" className="aspect-[4/3] w-full rounded-md object-cover hairline" />
+          <img src={celebration5.url} alt="Banquet and catering at The Celebration" loading="lazy" className="aspect-[4/3] w-full rounded-md object-cover hairline" />
         </section>
       </div>
       <Lightbox shots={VENUE} index={idx} onClose={() => setIdx(null)} onIndex={setIdx} />
