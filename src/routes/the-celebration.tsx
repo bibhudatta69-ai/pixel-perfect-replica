@@ -30,12 +30,13 @@ const FACILITIES = [
   { t: "Stage / Decoration Space", confirmed: false }, { t: "Lighting", confirmed: false },
   { t: "Sound / Event Setup Support", confirmed: false }, { t: "Parking / Access", confirmed: false },
 ];
-// Demo images — replace with real venue photos.
+// Real venue photos — The Celebration, Kuakhia.
 const VENUE: Shot[] = [
-  { src: celebration, caption: "The Celebration Hall" },
-  { src: family, caption: "Family Celebration" },
-  { src: interior, caption: "Meeting & Gathering" },
-  { src: special, caption: "Celebration Feast by The Bite" },
+  { src: celebration2.url, caption: "The Celebration — Main Stage" },
+  { src: celebration1.url, caption: "Stage decor under the lights" },
+  { src: celebration4.url, caption: "Royal seating & floral arch" },
+  { src: celebration3.url, caption: "Evening celebrations" },
+  { src: celebration5.url, caption: "Banquet & catering area" },
 ];
 
 const BOOKING_MSG = "Hello, I would like to enquire about booking The Celebration.\n\nEvent Type:\nPreferred Date:\nNumber of Guests:\nName:\n\nPlease share availability and package details.";
