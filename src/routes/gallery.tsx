@@ -17,6 +17,16 @@ import celebration2 from "@/assets/celebration-2.jpg.asset.json";
 import celebration3 from "@/assets/celebration-3.jpg.asset.json";
 import celebration4 from "@/assets/celebration-4.jpg.asset.json";
 import celebration5 from "@/assets/celebration-5.jpg.asset.json";
+import biteMuralSinger from "@/assets/bite-mural-singer.jpg.asset.json";
+import biteDiningGuests from "@/assets/bite-dining-guests.jpg.asset.json";
+import biteOutdoorNeon from "@/assets/bite-outdoor-neon.jpg.asset.json";
+import biteMuralSmoker from "@/assets/bite-mural-smoker.jpg.asset.json";
+import biteMuralPirate from "@/assets/bite-mural-pirate.jpg.asset.json";
+import biteCabinDining from "@/assets/bite-cabin-dining.jpg.asset.json";
+import biteGuestsSelfie from "@/assets/bite-guests-selfie.jpg.asset.json";
+import biteTeam from "@/assets/bite-team.jpg.asset.json";
+import biteCabinSeating from "@/assets/bite-cabin-seating.jpg.asset.json";
+import celebrationReception from "@/assets/celebration-reception.jpg.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
