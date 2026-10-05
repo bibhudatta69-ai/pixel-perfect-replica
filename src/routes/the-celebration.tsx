@@ -46,13 +46,13 @@ function Celebration() {
   return (
     <>
       <section className="relative flex min-h-[90svh] items-end overflow-hidden pb-20">
-        <img src={celebration} alt="Decorated mandap (demo image)" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={celebration2.url} alt="The Celebration venue decorated for an event" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-overlay/30" />
         <div className="relative mx-auto w-full max-w-7xl px-5 lg:px-8">
           <p className="eyebrow">Mandap & Banquet · By the owners of The Bite</p>
           <h1 className="mt-5 text-6xl md:text-8xl">The Celebration</h1>
           <p className="mt-4 max-w-xl font-display text-2xl italic text-muted-foreground">Where special moments become unforgettable memories.</p>
-          <p className="mt-3 text-xs text-muted-foreground">Images shown are illustrative; venue photos coming soon.</p>
+          <p className="mt-3 text-xs text-muted-foreground">Photos from events at The Celebration.</p>
         </div>
       </section>
 
