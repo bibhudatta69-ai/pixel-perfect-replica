@@ -42,6 +42,11 @@ const SHOTS: Shot[] = [
   { src: chinese, caption: "Welcome to The Bite." },
   { src: starters, caption: "Made for memorable occasions." },
   { src: special, caption: "The Bite experience." },
+  { src: celebration2.url, caption: "The Celebration — Mandap & Banquet." },
+  { src: celebration1.url, caption: "Stage decor under the lights." },
+  { src: celebration4.url, caption: "Royal seating & floral arch." },
+  { src: celebration3.url, caption: "Evening celebrations at The Celebration." },
+  { src: celebration5.url, caption: "Banquet & catering area." },
 ];
 
 function Gallery() {
