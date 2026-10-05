@@ -50,7 +50,7 @@ const SHOTS: Shot[] = [
   { src: biteDiningGuests.url, caption: "Good times with friends over dinner." },
   { src: biteCabinDining.url, caption: "Family dining in the AC cabin." },
   { src: biteGuestsSelfie.url, caption: "Meals made for laughter and stories." },
-  { src: biteTeam.url, caption: "The Bite team under the festoon lights." },
+  { src: biteTeam.url, caption: "Friends first choice to hangout." },
   { src: biryani, caption: "Aromatic, rich and served fresh." },
   { src: tandoori, caption: "Smoky flavours from the tandoor." },
   { src: interior, caption: "An inviting place to gather." },
