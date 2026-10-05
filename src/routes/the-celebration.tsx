@@ -3,10 +3,12 @@ import { useState } from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import { Lightbox, type Shot } from "@/components/site/Lightbox";
 import { SITE, waLink } from "@/data/site";
-import celebration from "@/assets/celebration.jpg";
+import celebration1 from "@/assets/celebration-1.jpg.asset.json";
+import celebration2 from "@/assets/celebration-2.jpg.asset.json";
+import celebration3 from "@/assets/celebration-3.jpg.asset.json";
+import celebration4 from "@/assets/celebration-4.jpg.asset.json";
+import celebration5 from "@/assets/celebration-5.jpg.asset.json";
 import family from "@/assets/family.jpg";
-import interior from "@/assets/interior.jpg";
-import special from "@/assets/special.jpg";
 
 export const Route = createFileRoute("/the-celebration")({
   head: () => ({
