@@ -8,6 +8,7 @@ import celebration2 from "@/assets/celebration-2.jpg.asset.json";
 import celebration3 from "@/assets/celebration-3.jpg.asset.json";
 import celebration4 from "@/assets/celebration-4.jpg.asset.json";
 import celebration5 from "@/assets/celebration-5.jpg.asset.json";
+import celebrationReception from "@/assets/celebration-reception.jpg.asset.json";
 
 export const Route = createFileRoute("/the-celebration")({
   head: () => ({
@@ -31,6 +32,7 @@ const FACILITIES = [
 ];
 // Real venue photos — The Celebration, Kuakhia.
 const VENUE: Shot[] = [
+  { src: celebrationReception.url, caption: "The Celebration — Reception entrance" },
   { src: celebration2.url, caption: "The Celebration — Main Stage" },
   { src: celebration1.url, caption: "Stage decor under the lights" },
   { src: celebration4.url, caption: "Royal seating & floral arch" },

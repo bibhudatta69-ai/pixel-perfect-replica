@@ -17,6 +17,16 @@ import celebration2 from "@/assets/celebration-2.jpg.asset.json";
 import celebration3 from "@/assets/celebration-3.jpg.asset.json";
 import celebration4 from "@/assets/celebration-4.jpg.asset.json";
 import celebration5 from "@/assets/celebration-5.jpg.asset.json";
+import biteMuralSinger from "@/assets/bite-mural-singer.jpg.asset.json";
+import biteDiningGuests from "@/assets/bite-dining-guests.jpg.asset.json";
+import biteOutdoorNeon from "@/assets/bite-outdoor-neon.jpg.asset.json";
+import biteMuralSmoker from "@/assets/bite-mural-smoker.jpg.asset.json";
+import biteMuralPirate from "@/assets/bite-mural-pirate.jpg.asset.json";
+import biteCabinDining from "@/assets/bite-cabin-dining.jpg.asset.json";
+import biteGuestsSelfie from "@/assets/bite-guests-selfie.jpg.asset.json";
+import biteTeam from "@/assets/bite-team.jpg.asset.json";
+import biteCabinSeating from "@/assets/bite-cabin-seating.jpg.asset.json";
+import celebrationReception from "@/assets/celebration-reception.jpg.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -32,6 +42,15 @@ export const Route = createFileRoute("/gallery")({
 
 // Demo images — replace with real restaurant photos and edit captions here.
 const SHOTS: Shot[] = [
+  { src: biteOutdoorNeon.url, caption: "The Bite at night — lit up and welcoming." },
+  { src: biteMuralSinger.url, caption: "Street-art wall at the entrance." },
+  { src: biteMuralSmoker.url, caption: "Hand-painted art inside the restaurant." },
+  { src: biteMuralPirate.url, caption: "Colourful murals around every corner." },
+  { src: biteCabinSeating.url, caption: "Comfortable AC cabin seating." },
+  { src: biteDiningGuests.url, caption: "Good times with friends over dinner." },
+  { src: biteCabinDining.url, caption: "Family dining in the AC cabin." },
+  { src: biteGuestsSelfie.url, caption: "Meals made for laughter and stories." },
+  { src: biteTeam.url, caption: "The Bite team under the festoon lights." },
   { src: biryani, caption: "Aromatic, rich and served fresh." },
   { src: tandoori, caption: "Smoky flavours from the tandoor." },
   { src: interior, caption: "An inviting place to gather." },
@@ -42,6 +61,7 @@ const SHOTS: Shot[] = [
   { src: chinese, caption: "Welcome to The Bite." },
   { src: starters, caption: "Made for memorable occasions." },
   { src: special, caption: "The Bite experience." },
+  { src: celebrationReception.url, caption: "The Celebration — Reception entrance." },
   { src: celebration2.url, caption: "The Celebration — Mandap & Banquet." },
   { src: celebration1.url, caption: "Stage decor under the lights." },
   { src: celebration4.url, caption: "Royal seating & floral arch." },
