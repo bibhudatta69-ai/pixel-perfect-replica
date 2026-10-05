@@ -32,6 +32,7 @@ const FACILITIES = [
 ];
 // Real venue photos — The Celebration, Kuakhia.
 const VENUE: Shot[] = [
+  { src: celebrationReception.url, caption: "The Celebration — Reception entrance" },
   { src: celebration2.url, caption: "The Celebration — Main Stage" },
   { src: celebration1.url, caption: "Stage decor under the lights" },
   { src: celebration4.url, caption: "Royal seating & floral arch" },

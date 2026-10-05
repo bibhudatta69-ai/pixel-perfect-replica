@@ -42,6 +42,15 @@ export const Route = createFileRoute("/gallery")({
 
 // Demo images — replace with real restaurant photos and edit captions here.
 const SHOTS: Shot[] = [
+  { src: biteOutdoorNeon.url, caption: "The Bite at night — lit up and welcoming." },
+  { src: biteMuralSinger.url, caption: "Street-art wall at the entrance." },
+  { src: biteMuralSmoker.url, caption: "Hand-painted art inside the restaurant." },
+  { src: biteMuralPirate.url, caption: "Colourful murals around every corner." },
+  { src: biteCabinSeating.url, caption: "Comfortable AC cabin seating." },
+  { src: biteDiningGuests.url, caption: "Good times with friends over dinner." },
+  { src: biteCabinDining.url, caption: "Family dining in the AC cabin." },
+  { src: biteGuestsSelfie.url, caption: "Meals made for laughter and stories." },
+  { src: biteTeam.url, caption: "The Bite team under the festoon lights." },
   { src: biryani, caption: "Aromatic, rich and served fresh." },
   { src: tandoori, caption: "Smoky flavours from the tandoor." },
   { src: interior, caption: "An inviting place to gather." },
@@ -52,6 +61,7 @@ const SHOTS: Shot[] = [
   { src: chinese, caption: "Welcome to The Bite." },
   { src: starters, caption: "Made for memorable occasions." },
   { src: special, caption: "The Bite experience." },
+  { src: celebrationReception.url, caption: "The Celebration — Reception entrance." },
   { src: celebration2.url, caption: "The Celebration — Mandap & Banquet." },
   { src: celebration1.url, caption: "Stage decor under the lights." },
   { src: celebration4.url, caption: "Royal seating & floral arch." },
