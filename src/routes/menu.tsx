@@ -5,8 +5,8 @@ import { PageHero } from "@/components/site/Chrome";
 import { MenuBrowser } from "@/components/site/MenuBrowser";
 import { Lightbox, type Shot } from "@/components/site/Lightbox";
 import tandoori from "@/assets/tandoori.jpg";
-import originalMenu1 from "@/assets/original-menu-1.jpg.asset.json";
-import originalMenu2 from "@/assets/original-menu-2.jpg.asset.json";
+import originalMenu1 from "@/assets/original-menu-1.jpg";
+import originalMenu2 from "@/assets/original-menu-2.jpg";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -22,8 +22,8 @@ export const Route = createFileRoute("/menu")({
 
 // The restaurant's original menu photographs.
 const ORIGINAL_MENU: Shot[] = [
-  { src: originalMenu1.url, caption: "Original Menu — Page 1" },
-  { src: originalMenu2.url, caption: "Original Menu — Page 2" },
+  { src: originalMenu1, caption: "Original Menu — Page 1" },
+  { src: originalMenu2, caption: "Original Menu — Page 2" },
 ];
 
 function MenuPage() {

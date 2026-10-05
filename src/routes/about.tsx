@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import interior from "@/assets/interior.jpg";
 import family from "@/assets/family.jpg";
 import curryVeg from "@/assets/curry-veg.jpg";
-import ownerSameer from "@/assets/owner-sameer.jpg.asset.json";
+import ownerSameer from "@/assets/owner-sameer.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -52,7 +52,7 @@ function About() {
         <section className="mx-auto max-w-2xl text-center">
           <p className="eyebrow">Owner / Management</p>
           <h2 className="mt-3 text-4xl">Meet the people behind The Bite</h2>
-          <img src={ownerSameer.url} alt="Sameer Kumar Debata — Owner of The Bite" loading="lazy" className="mx-auto mt-8 aspect-[4/5] w-64 rounded-md object-cover hairline" />
+          <img src={ownerSameer} alt="Sameer Kumar Debata — Owner of The Bite" loading="lazy" className="mx-auto mt-8 aspect-[4/5] w-64 rounded-md object-cover hairline" />
           <p className="mt-6 font-display text-3xl text-gold">Sameer Kumar Debata</p>
           <p className="mt-1 text-sm uppercase tracking-[0.2em] text-muted-foreground">Owner, The Bite</p>
           <Link to="/menu" className="mt-8 inline-block rounded-sm bg-gold-gradient px-8 py-4 text-xs font-semibold tracking-[0.25em] text-primary-foreground">EXPLORE MENU</Link>
