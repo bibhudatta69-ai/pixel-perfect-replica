@@ -43,8 +43,8 @@ function OrderPage() {
       "Items:", lines.join("\n\n"), "",
       `TOTAL: ₹${total}`, "",
       `Payment: ${pay === "now" ? "Paid via UPI (screenshot to follow)" : "Pay at Restaurant"}`,
-      notes && `\nNotes: ${notes}`,
-    ].filter((x) => x !== false && x !== undefined).join("\n");
+      ...(notes ? [`\nNotes: ${notes}`] : []),
+    ].join("\n");
   };
 
   const opt = (a: boolean) => `rounded-sm border py-4 text-xs tracking-[0.2em] transition ${a ? "border-gold bg-accent text-gold" : "text-muted-foreground hover:border-gold"}`;

@@ -23,11 +23,12 @@ export function Lightbox({ shots, index, onClose, onIndex }: { shots: Shot[]; in
 
   if (index === null) return null;
   const s = shots[index];
+  if (!s) return null;
   const btn = "grid h-11 w-11 place-items-center rounded-full border border-gold/40 bg-overlay/60 text-gold backdrop-blur hover:bg-overlay";
   return (
     <div role="dialog" aria-label="Image viewer" className="fixed inset-0 z-[70] flex flex-col bg-overlay/95 page-enter"
-      onTouchStart={(e) => (touchX.current = e.touches[0].clientX)}
-      onTouchEnd={(e) => { if (touchX.current === null) return; const d = e.changedTouches[0].clientX - touchX.current; if (Math.abs(d) > 50) go(d < 0 ? 1 : -1); touchX.current = null; }}>
+      onTouchStart={(e) => (touchX.current = e.touches[0]?.clientX ?? null)}
+      onTouchEnd={(e) => { if (touchX.current === null) return; const d = (e.changedTouches[0]?.clientX ?? touchX.current) - touchX.current; if (Math.abs(d) > 50) go(d < 0 ? 1 : -1); touchX.current = null; }}>
       <div className="flex items-center justify-end gap-2 p-4">
         <button className={btn} onClick={() => setZoom((z) => Math.min(3, z + 0.5))} aria-label="Zoom in"><ZoomIn className="h-4 w-4" /></button>
         <button className={btn} onClick={() => setZoom((z) => Math.max(1, z - 0.5))} aria-label="Zoom out"><ZoomOut className="h-4 w-4" /></button>

@@ -60,12 +60,12 @@ const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(
 export const MENU: MenuItem[] = Object.entries(RAW).flatMap(([category, rows]) =>
   rows.map((row) => {
     const veg = row.startsWith("V:");
-    const [name, p] = row.slice(2).split("|");
+    const [name = "", p = ""] = row.slice(2).split("|");
     const id = slug(`${category}-${name}`);
-    const base: MenuItem = { id, name, category, veg, image: IMAGE_OVERRIDES[id] ?? CAT_IMAGE[category] };
+    const base: MenuItem = { id, name, category, veg, image: IMAGE_OVERRIDES[id] ?? CAT_IMAGE[category] ?? biryani };
     if (p === "TBC") return { ...base, tbc: true };
     if (p.includes("/")) {
-      const [full, half] = p.split("/").map(Number);
+      const [full = 0, half = 0] = p.split("/").map(Number);
       return { ...base, full, half };
     }
     return { ...base, price: Number(p) };
