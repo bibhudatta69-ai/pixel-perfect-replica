@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Architecture
+- Restaurant info lives in src/data/site.ts and the full menu in src/data/menu.ts; pages read from them so the owner edits one place.
+- Cart, favorites and theme live in one StoreProvider (src/lib/store.tsx) persisted to localStorage, so state survives navigation and refresh.
