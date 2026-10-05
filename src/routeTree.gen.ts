@@ -14,7 +14,9 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as LocationRouteImport } from './routes/location'
 import { Route as MenuRouteImport } from './routes/menu'
+import { Route as OrderRouteImport } from './routes/order'
 import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as TheCelebrationRouteImport } from './routes/the-celebration'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -41,9 +43,19 @@ const MenuRoute = MenuRouteImport.update({
   path: '/menu',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OrderRoute = OrderRouteImport.update({
+  id: '/order',
+  path: '/order',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ReviewsRoute = ReviewsRouteImport.update({
   id: '/reviews',
   path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TheCelebrationRoute = TheCelebrationRouteImport.update({
+  id: '/the-celebration',
+  path: '/the-celebration',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -53,7 +65,9 @@ export interface FileRoutesByFullPath {
   '/gallery': typeof GalleryRoute
   '/location': typeof LocationRoute
   '/menu': typeof MenuRoute
+  '/order': typeof OrderRoute
   '/reviews': typeof ReviewsRoute
+  '/the-celebration': typeof TheCelebrationRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -61,7 +75,9 @@ export interface FileRoutesByTo {
   '/gallery': typeof GalleryRoute
   '/location': typeof LocationRoute
   '/menu': typeof MenuRoute
+  '/order': typeof OrderRoute
   '/reviews': typeof ReviewsRoute
+  '/the-celebration': typeof TheCelebrationRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -70,13 +86,31 @@ export interface FileRoutesById {
   '/gallery': typeof GalleryRoute
   '/location': typeof LocationRoute
   '/menu': typeof MenuRoute
+  '/order': typeof OrderRoute
   '/reviews': typeof ReviewsRoute
+  '/the-celebration': typeof TheCelebrationRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/gallery' | '/location' | '/menu' | '/reviews'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/gallery'
+    | '/location'
+    | '/menu'
+    | '/order'
+    | '/reviews'
+    | '/the-celebration'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/gallery' | '/location' | '/menu' | '/reviews'
+  to:
+    | '/'
+    | '/about'
+    | '/gallery'
+    | '/location'
+    | '/menu'
+    | '/order'
+    | '/reviews'
+    | '/the-celebration'
   id:
     | '__root__'
     | '/'
@@ -84,7 +118,9 @@ export interface FileRouteTypes {
     | '/gallery'
     | '/location'
     | '/menu'
+    | '/order'
     | '/reviews'
+    | '/the-celebration'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -93,7 +129,9 @@ export interface RootRouteChildren {
   GalleryRoute: typeof GalleryRoute
   LocationRoute: typeof LocationRoute
   MenuRoute: typeof MenuRoute
+  OrderRoute: typeof OrderRoute
   ReviewsRoute: typeof ReviewsRoute
+  TheCelebrationRoute: typeof TheCelebrationRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -133,11 +171,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MenuRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/order': {
+      id: '/order'
+      path: '/order'
+      fullPath: '/order'
+      preLoaderRoute: typeof OrderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/reviews': {
       id: '/reviews'
       path: '/reviews'
       fullPath: '/reviews'
       preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/the-celebration': {
+      id: '/the-celebration'
+      path: '/the-celebration'
+      fullPath: '/the-celebration'
+      preLoaderRoute: typeof TheCelebrationRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -149,7 +201,9 @@ const rootRouteChildren: RootRouteChildren = {
   GalleryRoute: GalleryRoute,
   LocationRoute: LocationRoute,
   MenuRoute: MenuRoute,
+  OrderRoute: OrderRoute,
   ReviewsRoute: ReviewsRoute,
+  TheCelebrationRoute: TheCelebrationRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
