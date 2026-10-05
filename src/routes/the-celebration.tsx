@@ -3,10 +3,11 @@ import { useState } from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import { Lightbox, type Shot } from "@/components/site/Lightbox";
 import { SITE, waLink } from "@/data/site";
-import celebration from "@/assets/celebration.jpg";
-import family from "@/assets/family.jpg";
-import interior from "@/assets/interior.jpg";
-import special from "@/assets/special.jpg";
+import celebration1 from "@/assets/celebration-1.jpg.asset.json";
+import celebration2 from "@/assets/celebration-2.jpg.asset.json";
+import celebration3 from "@/assets/celebration-3.jpg.asset.json";
+import celebration4 from "@/assets/celebration-4.jpg.asset.json";
+import celebration5 from "@/assets/celebration-5.jpg.asset.json";
 
 export const Route = createFileRoute("/the-celebration")({
   head: () => ({
@@ -28,12 +29,13 @@ const FACILITIES = [
   { t: "Stage / Decoration Space", confirmed: false }, { t: "Lighting", confirmed: false },
   { t: "Sound / Event Setup Support", confirmed: false }, { t: "Parking / Access", confirmed: false },
 ];
-// Demo images — replace with real venue photos.
+// Real venue photos — The Celebration, Kuakhia.
 const VENUE: Shot[] = [
-  { src: celebration, caption: "The Celebration Hall" },
-  { src: family, caption: "Family Celebration" },
-  { src: interior, caption: "Meeting & Gathering" },
-  { src: special, caption: "Celebration Feast by The Bite" },
+  { src: celebration2.url, caption: "The Celebration — Main Stage" },
+  { src: celebration1.url, caption: "Stage decor under the lights" },
+  { src: celebration4.url, caption: "Royal seating & floral arch" },
+  { src: celebration3.url, caption: "Evening celebrations" },
+  { src: celebration5.url, caption: "Banquet & catering area" },
 ];
 
 const BOOKING_MSG = "Hello, I would like to enquire about booking The Celebration.\n\nEvent Type:\nPreferred Date:\nNumber of Guests:\nName:\n\nPlease share availability and package details.";
@@ -43,13 +45,13 @@ function Celebration() {
   return (
     <>
       <section className="relative flex min-h-[90svh] items-end overflow-hidden pb-20">
-        <img src={celebration} alt="Decorated mandap (demo image)" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={celebration2.url} alt="The Celebration venue decorated for an event" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-overlay/30" />
         <div className="relative mx-auto w-full max-w-7xl px-5 lg:px-8">
           <p className="eyebrow">Mandap & Banquet · By the owners of The Bite</p>
           <h1 className="mt-5 text-6xl md:text-8xl">The Celebration</h1>
           <p className="mt-4 max-w-xl font-display text-2xl italic text-muted-foreground">Where special moments become unforgettable memories.</p>
-          <p className="mt-3 text-xs text-muted-foreground">Images shown are illustrative; venue photos coming soon.</p>
+          <p className="mt-3 text-xs text-muted-foreground">Photos from events at The Celebration.</p>
         </div>
       </section>
 
@@ -110,7 +112,7 @@ function Celebration() {
               <Link to="/order" className="rounded-sm bg-gold-gradient px-6 py-3.5 text-xs font-semibold tracking-[0.2em] text-primary-foreground">ORDER FROM THE BITE</Link>
             </div>
           </div>
-          <img src={family} alt="Family feast" loading="lazy" className="aspect-[4/3] w-full rounded-md object-cover hairline" />
+          <img src={celebration5.url} alt="Banquet and catering at The Celebration" loading="lazy" className="aspect-[4/3] w-full rounded-md object-cover hairline" />
         </section>
       </div>
       <Lightbox shots={VENUE} index={idx} onClose={() => setIdx(null)} onIndex={setIdx} />

@@ -12,6 +12,11 @@ import riceNaan from "@/assets/rice-naan.jpg";
 import starters from "@/assets/starters.jpg";
 import special from "@/assets/special.jpg";
 import chinese from "@/assets/chinese.jpg";
+import celebration1 from "@/assets/celebration-1.jpg.asset.json";
+import celebration2 from "@/assets/celebration-2.jpg.asset.json";
+import celebration3 from "@/assets/celebration-3.jpg.asset.json";
+import celebration4 from "@/assets/celebration-4.jpg.asset.json";
+import celebration5 from "@/assets/celebration-5.jpg.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -37,6 +42,11 @@ const SHOTS: Shot[] = [
   { src: chinese, caption: "Welcome to The Bite." },
   { src: starters, caption: "Made for memorable occasions." },
   { src: special, caption: "The Bite experience." },
+  { src: celebration2.url, caption: "The Celebration — Mandap & Banquet." },
+  { src: celebration1.url, caption: "Stage decor under the lights." },
+  { src: celebration4.url, caption: "Royal seating & floral arch." },
+  { src: celebration3.url, caption: "Evening celebrations at The Celebration." },
+  { src: celebration5.url, caption: "Banquet & catering area." },
 ];
 
 function Gallery() {
