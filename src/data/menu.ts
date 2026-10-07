@@ -62,7 +62,13 @@ export const MENU: MenuItem[] = Object.entries(RAW).flatMap(([category, rows]) =
     const veg = row.startsWith("V:");
     const [name = "", p = ""] = row.slice(2).split("|");
     const id = slug(`${category}-${name}`);
-    const base: MenuItem = { id, name, category, veg, image: IMAGE_OVERRIDES[id] ?? CAT_IMAGE[category] ?? biryani };
+    const base: MenuItem = {
+  id,
+  name,
+  category,
+  veg,
+  image: IMAGE_OVERRIDES[id] ?? `/menu-items/${id}.jpg`,
+};
     if (p === "TBC") return { ...base, tbc: true };
     if (p.includes("/")) {
       const [full = 0, half = 0] = p.split("/").map(Number);
