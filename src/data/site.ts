@@ -7,7 +7,7 @@ export const SITE = {
   whatsapp: "917077186377", // primary WhatsApp number (with country code)
   // Replace with the owner's exact Google Maps link when available.
   mapsLink: "https://maps.app.goo.gl/Lg2VjMeTcikEymD18",
-  mapsEmbed: "https://maps.app.goo.gl/Lg2VjMeTcikEymD18",
+  mapsEmbed: "https://www.google.com/maps?q=Chandipur,+Kuakhia+Odisha+755009&output=embed",
   googleReviewsLink: "https://www.google.com/maps/search/?api=1&query=The+Bite+Restaurant+Kuakhia",
   instagram: "https://www.instagram.com/thebiterestro?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
   facebook: "#",
