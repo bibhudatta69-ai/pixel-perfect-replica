@@ -8,7 +8,7 @@ export const Route = createFileRoute("/location")({
   head: () => ({
     meta: [
       { title: "Location — The Bite, Chandipur, Kuakhia" },
-      { name: "description", content: "Find The Bite in front of The Celebration Mandap, Chandipur, Kuakhia Market, Odisha 755009. Call 7077186377 / 7853999380." },
+      { name: "description", content: "Find The Bite Near The Celebration Mandap, Chandipur, Kuakhia Market, Odisha 755009. Call 7077186377 / 9237237550." },
       { property: "og:title", content: "Visit The Bite, Kuakhia" },
       { property: "og:description", content: "Directions, phone and WhatsApp for The Bite." },
     ],
