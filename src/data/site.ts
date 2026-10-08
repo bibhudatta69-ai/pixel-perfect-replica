@@ -1,3 +1,4 @@
+import upiQrImage from "@/assets/the-bite-upi-qr.png";
 // Edit restaurant details here — every page reads from this file.
 export const SITE = {
   name: "THE BITE",
@@ -12,7 +13,7 @@ export const SITE = {
   instagram: "https://www.instagram.com/thebiterestro?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
   facebook: "#",
   // Set to an imported image path once the real UPI QR is supplied.
-  upiQr: null as string | null,
+  upiQr: upiQrImage,
 };
 
 export const waLink = (text: string, number = SITE.whatsapp) =>
