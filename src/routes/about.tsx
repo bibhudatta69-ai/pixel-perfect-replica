@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About — The Bite, Kuakhia" },
-      { name: "description", content: "The story, food and philosophy behind The Bite restaurant in Kuakhia, Odisha." },
+      { name: "description", content: "The story, food and philosophy behind The Bite , The Best restaurant in Kuakhia, Odisha." },
       { property: "og:title", content: "About The Bite" },
       { property: "og:description", content: "Food built around flavour, warmth and togetherness." },
     ],

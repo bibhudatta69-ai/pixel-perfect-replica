@@ -11,9 +11,9 @@ import celebration from "@/assets/celebration.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "The Bite — Premium Restaurant in Kuakhia, Odisha" },
+      { title: "The Bite — Best Premium Restaurant in Kuakhia, Odisha" },
       { name: "description", content: "Aromatic biryanis, smoky tandoor, rich curries. Browse the full menu and order on WhatsApp from The Bite, Kuakhia." },
-      { property: "og:title", content: "The Bite — Premium Restaurant in Kuakhia" },
+      { property: "og:title", content: "The Bite — Best Restaurant in Kuakhia" },
       { property: "og:description", content: "Premium quality, rich flavours, an unforgettable experience." },
     ],
   }),
